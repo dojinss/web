@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크 태그</title>
+</head>
+<body>
+    <!-- 
+        a 태그
+
+        * 속성
+        - href : 이동할 경로(파일경로, URL, id속성)
+        - 경로
+        * 절대 경로 : href="http://www.naver.com"   다른 웹사이트로 이동
+        * 상대 경로 : href="../../test.html"        상위 경로의 다른 문서로 이동
+        * 문서 내부 : href="#text"                  id 속성이 text 인 요소로 이동
+
+        *) ../      : 상위 경로
+            ./      : 현재 경로
+
+        - target
+        * _blank        : 새 창에서 열기
+        * _self         : 현재 창에서 열기
+        * _parent       : 부모 프레임에서 열기
+        * _top          : 최상위 프레임에서 열기
+     -->
+    <a href="http://www.naver.com" target="_blank">Naver</a>
+    <a href="http://www.naver.com" id="top" target="_blank">네이버(새창)</a>
+    <a href="#bot" id="mid" target="_self"></a>
+    
+
+    <div class="" style="height: 1000px;"></div>
+    <p>
+        이메일 <br> 
+        <a href="mailto:ehwls20@gmail.com">ehwls20@gmail.com</a>
+    </p>
+
+    <p>
+        <a href="tel:010-1111-1111">010-1111-1111</a>
+    </p>
+
+    <a href="#top" id="bot" target="_self"
+        style="position: absolute;width: 100px;height: 100px; background-color: aquamarine;"
+    >맨위로</a>
+
+</body>
+</html>

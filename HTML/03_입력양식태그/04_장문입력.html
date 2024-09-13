@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 쓰기</title>
+</head>
+<body>
+    <h1>게시글 쓰기</h1>
+
+    <table border="1">
+        <tr>
+            <td>제목</td>
+            <td>
+                <input type="text" 
+                style="width: 90%;"
+                name="title" id="title" placeholder="제목을 입력하세요">
+            </td>
+        </tr>
+        <tr>
+            <td>작성자</td>
+            <td>
+                <input type="text" 
+                style="width: 90%;"
+                name="writer" id="writer" placeholder="작성자를 입력하세요">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea name="content" id="content"
+                style="resize: none;"
+                placeholder="내용을 입력하세요." 
+                maxlength="200"
+                rows="5" cols="40"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit" style="width: 100%;">등록하기</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

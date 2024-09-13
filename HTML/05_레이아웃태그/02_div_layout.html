@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: #eee;
+        }
+        .container {
+            height: 137px;
+        }
+        .left-side {
+            float: left;
+            background-color: #aaa;
+            width: 25%;
+            padding: 10px;
+            height: 100%;
+        }
+        .main{
+            float: left;
+            background-color: #bbb;
+            width: 50%;
+            padding: 10px;
+            height: 100%;
+        }
+        .right-side {
+            float: left;
+            background-color: #ccc;
+            width: 25%;
+            padding: 10px;
+            height: 100%;
+        }
+        .footer {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            line-height: 100px;
+        }
+        </style>
+</head>
+<body>
+    <h1>div 레이아웃</h1>
+    <div class="header">
+        <h2>헤더 영역</h2>
+    </div>
+
+    <div class="container">
+        <div class="left-side">왼쪽</div>
+        <div class="main">메인</div>
+        <div class="right-side">오른쪽</div>
+    </div>
+
+    <div class="footer">
+        <p>풋터 영역</p>
+    </div>
+</body>
+</html>
